@@ -14,7 +14,7 @@ html {
   display: flex;
   background-color: #eee;
   width: 100%;
-  height: 80px;
+  height: 81px;
 }
 
 .logo {
@@ -80,14 +80,14 @@ nav {
   align-items: center;
 }
 
-.apresentacao .infos {
+.infos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: calc(50vw - 10px);
+  width: 50vw;
   height: 50vh;
   text-align: center;
-  color:#000;
+  color:#eee;
 }
 
 .infos h1 {
@@ -188,7 +188,7 @@ nav {
 #ajuda {
   width: 100%;
   height: 70vh;
-  background-color: #F6F6E5;
+  background-image: radial-gradient(#F6F6E5, #FFBCCB);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,7 +214,7 @@ nav {
 }
 
 .carrossel {
-  color: #eee;
+  color: #000;
   margin: 10px 0px;
   display: flex;
 }
@@ -222,7 +222,7 @@ nav {
 .carrossel article {
   height: 250px;
   width: 260px;
-  background-color: #FF8DB7;
+  background-color: #FFBCCB;
   padding: 10px;
   margin: 0 5px;
   border-radius: 10px;
@@ -252,9 +252,14 @@ nav {
   margin-bottom: 10px;
 }
 
+.contraste {
+  background-color: #FFBCCB;
+  color: #000;
+}
+
 @media (max-width: 600px), (orientation: portrait) {
   html {
-    scroll-padding-top: 40px;
+    scroll-padding-top: 41px;
   }
 
   .cabecalho {
@@ -270,6 +275,10 @@ nav {
 
   .cabecalho nav {
     display: none;
+  }
+
+  .infos {
+    width: 100%;
   }
 
   .infos h1 {
@@ -288,7 +297,7 @@ nav {
   }
 
   .botao {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
   #inicio {
@@ -305,16 +314,16 @@ nav {
   }
 
   .conteudo-inicio p {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
   #ajuda {
-    height: 180vh;
+    height: 160vh;
   }
 
   .conteudo-ajuda {
     width: 90vw;
-    height: 180vh;
+    height: 160vh;
     justify-content: space-evenly;
   }
 
@@ -323,21 +332,21 @@ nav {
   }
 
   .conteudo-ajuda h2 {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
   .conteudo-ajuda p {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
   .carrossel {
     flex-direction: column;
-    height: 120vh;
+    height: fit-content;
   }
 
   .carrossel article {
     width: 90vw;
-    height: 150px;
+    height: 180px;
     margin: 5px 0;
   }
 }
