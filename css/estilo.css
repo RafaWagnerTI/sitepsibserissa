@@ -70,7 +70,7 @@ nav {
 .apresentacao {
   width: 100%;
   height: 75vh;
-  background: url("./imagens/sala-terapia.png");
+  background: url("../imagens/sala-terapia.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -110,7 +110,7 @@ nav {
   background-color: #FF8DB7;
   color: #eee;
   width: fit-content;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 15px;
   align-items: flex-end;
   box-shadow: 2px 3px 10px 0px rgba(0,0,0,0.5);
@@ -289,14 +289,99 @@ nav {
   width: 40vw;
   height: 60vh;
   padding: 10px 20px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.beneficios-cab h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.beneficios-cab p {
+  padding: 20px 10px 0 10px;
+}
+
 .beneficios-lista ul {
-  padding: 20px;
-  list-style-image: url("./imagens/check.svg");
+  padding: 30px 60px;
+  list-style-image: url("../imagens/check.svg");
+}
+
+.beneficios-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#depoimentos {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.conteudo-depoimentos {
+  width: 70vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.depoimentos-cab h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.depoimentos-cab p {
+  padding: 20px 0;
+}
+
+.depoimentos-slide {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  cursor: grab;
+  padding: 0px 60px 30px 60px;
+}
+
+.citacao {
+  width: 90px;
+  height: 90px;
+}
+
+.slide p.depoimentos-txt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+
+.slide .pessoa {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.slide .pessoa img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.slide .pessoa p.nome-pessoa {
+  font-style: bold;
+  font-weight: 600;
+}
+
+.slide .pessoa p.func-pessoa {
+  font-size: 0.8em;
 }
 
 @media (max-width: 600px), (orientation: portrait) {
