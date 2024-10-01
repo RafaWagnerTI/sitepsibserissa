@@ -76,7 +76,7 @@ nav {
   background-position: center center;
   padding: 10px;
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -84,7 +84,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 50vw;
+  width: 60vw;
   height: 50vh;
   text-align: center;
   color:#eee;
@@ -267,7 +267,7 @@ nav {
 }
 
 .conteudo-beneficios {
-  width: 70vw;
+  width: 60vw;
   height: 60vh;
   display: flex;
 }
@@ -317,9 +317,10 @@ nav {
 #depoimentos {
   position: relative;
   width: 100%;
-  height: fit-content;
+  height: 60vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .conteudo-depoimentos {
@@ -384,72 +385,18 @@ nav {
   font-size: 0.8em;
 }
 
-@media (max-width: 600px), (orientation: portrait) {
-  html {
-    scroll-padding-top: 41px;
-  }
-
-  .cabecalho {
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    width: 50px;
-    max-height: 40px;
-  }
-
-  .cabecalho nav {
-    display: none;
-  }
-
+@media (max-width: 1090px) {
   .infos {
     width: 100%;
   }
 
-  .infos h1 {
-    font-size: 1.3em;
-  }
-
-  .infos p {
-    font-size: 0.6em;
-    font-weight: 600;
-  }
-
-  .botao svg {
-    margin-right: 5px;
-    width: 13px;
-    height: 13px;
-  }
-
-  .botao {
-    font-size: 0.9em;
-  }
-
-  #inicio {
-    height: 80vh;
-  }
-
-  .conteudo-inicio {
-    width: 90vw;
-    height: 80vh;
-  }
-
-  .conteudo-inicio h1 {
-    font-size: 1.3em;
-  }
-
-  .conteudo-inicio p {
-    font-size: 0.9em;
-  }
 
   #ajuda {
     height: 160vh;
   }
 
   .conteudo-ajuda {
-    width: 90vw;
+    width: 60vw;
     height: 160vh;
     justify-content: space-evenly;
   }
@@ -468,12 +415,81 @@ nav {
 
   .carrossel {
     flex-direction: column;
+    width: 60vw;
     height: fit-content;
   }
 
   .carrossel article {
-    width: 90vw;
+    width: 60vw;
     height: 180px;
     margin: 5px 0;
   }
+
+  #beneficios {
+    height: 180vh;
+  }
+
+  .conteudo-beneficios {
+    width: 60vw;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto-beneficios {
+    overflow: hidden;
+    width: 60vw;
+    height: 90vh;
+  }
+
+  .foto-beneficios img {
+    width: 60vw;
+    min-width: 450px;
+    max-width: 60vw;
+    max-height: 90vh;
+  }
+
+  .descricao-beneficios {
+    width: 60vw;
+    height: 80vh;
+  }
+}
+
+
+@media (max-width: 600px), (orientation: portrait) {
+  html {
+    scroll-padding-top: 61px;
+  }
+
+  .cabecalho {
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50px;
+    max-height: 40px;
+  }
+
+  .cabecalho nav {
+    display: none;
+  }
+
+  .conteudo-inicio h1 {
+    font-size: 1.3em;
+  }
+
+  .conteudo-inicio p {
+    font-size: 0.9em;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+
 }
