@@ -12,7 +12,6 @@ html {
 .cabecalho {
   position: sticky;
   top: 0;
-  display: flex;
   background-color: #eee;
   width: 100%;
   height: 81px;
@@ -31,16 +30,18 @@ html {
   display: none;
 }
 
-nav {
+#nav {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
 #menu {
   display: flex;
+  flex: 1;
   height: 80px;
   padding: 0;
   list-style-type: none;
-  padding-right: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -55,6 +56,12 @@ nav {
   color:#FF8DB7;
   transition: font-size 0.5s, color 0.5s;
   font-size:1.2em;
+}
+
+.placeholder:empty {
+  width: 90px;
+  height: 80px;
+  background-color: transparent;
 }
 
 .roboto-medium {
@@ -680,6 +687,7 @@ hr {
 
   .menu-mobile {
     display: flex;
+    align-items: center;
     margin-right: 10px;
     font-size: 1rem;
     border: none;
@@ -745,6 +753,10 @@ hr {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .placeholder:empty {
+    display: none;
   }
 
   .conteudo-inicio h1 {
