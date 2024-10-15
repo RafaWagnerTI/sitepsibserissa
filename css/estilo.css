@@ -15,7 +15,7 @@ html {
   background-color: #eee;
   width: 100%;
   height: 81px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo {
@@ -487,7 +487,7 @@ strong {
 #duvidas {
   width: 100%;
   height: fit-content;
-  margin: 50px 0;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -680,7 +680,7 @@ hr {
 }
 
 
-@media (max-width: 670px), (orientation: portrait) {
+@media (max-width: 690px), (orientation: portrait) {
   html {
     scroll-padding-top: 61px;
   }
@@ -716,10 +716,21 @@ hr {
     height: 2px;
     background-color: currentColor;
     margin-top: 5px;
+    transition: .3s;
+    position: relative;
   }
 
   #nav.aberto .hamburger {
     border-top-color: transparent;
+  }
+
+  #nav.aberto .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.aberto .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 
   .cabecalho {
@@ -743,7 +754,7 @@ hr {
     background-color: #eee;
     height: 0px;
     transition: .6s;
-    z-index: 1;
+    z-index: 2;
     visibility: hidden;
     overflow-y: hidden;
   }

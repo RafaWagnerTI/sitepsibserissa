@@ -25,10 +25,10 @@
     <header class="cabecalho">
       <nav id="nav">
         <img class="logo" src="./imagens/logo.png" />
-        <button id="menu-mobile" class="menu-mobile">
+        <button aria-label="Abrir Menu" id="menu-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" class="menu-mobile">
           <span class="hamburger"></span>
         </button>
-        <ul id="menu" class="roboto-medium">
+        <ul id="menu" class="roboto-medium" role="menu">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#ajuda">Como te ajudo</a></li>
           <li><a href="#sobre">Sobre Mim</a></li>
@@ -301,7 +301,7 @@
     </section>
     <section id="duvidas">
       <div class="duvidas-cab">
-        <h1 class="roboto-bold">Depoimentos</h1>
+        <h1 class="roboto-bold">Duvidas</h1>
       </div>
       <div class="conteudo-duvidas roboto-medium">
         <div class="duvidas-quest">

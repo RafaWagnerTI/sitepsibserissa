@@ -65,9 +65,14 @@ window.addEventListener("resize", () => {
 
 const btnMobile = document.getElementById('menu-mobile');
 
-function toggleMenu() {
+function toggleMenu(e) {
+  if (e.type == 'touchstart') e.preventDefault();
   const nav = document.getElementById('nav');
   nav.classList.toggle('aberto');
+  const aberto = nav.classList.contains('aberto');
+  e.currentTarget.setAttribute('aria-expanded', aberto);
+  e.currentTarget.setAttribute('aria-label', `${aberto ? "Fechar" : "Abrir"} Menu`);
 }
 
 btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
