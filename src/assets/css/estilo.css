@@ -79,7 +79,7 @@ html {
 .apresentacao {
   width: 100%;
   height: 75vh;
-  background: url("../images/apresentacao/sala-terapia-alt.png");
+  background: url("../images/apresentacao/sala-terapia.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -335,6 +335,7 @@ strong {
 .beneficios-cab h1 {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .beneficios-cab p {
@@ -770,12 +771,8 @@ hr {
     display: none;
   }
 
-  .conteudo-inicio h1 {
-    font-size: 1.3em;
-  }
-
-  .conteudo-inicio p {
-    font-size: 0.9em;
+  .beneficios-lista ul {
+    padding: 30px 10px ;
   }
 
   .swiper-button-next::after {
