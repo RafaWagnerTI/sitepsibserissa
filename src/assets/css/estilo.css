@@ -261,20 +261,35 @@ strong {
 
 .icone-espaco {
   display: flex;
+  align-items: center;
   justify-content: center;
+  overflow: hidden;
   height: 30px;
   width: 100%;
 }
 
-.icone-carrossel {
+.bi-heart-fill {
+  position: relative;
   font-size: 28px;
+}
+
+.bi-person-fill {
+  font-size: 39px;
+}
+
+.bi-emoji-frown-fill {
+  font-size: 28px;
+}
+
+.bi-battery {
+  font-size: 55px;
 }
 
 .carrossel p {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
 }
 
 .texto-centralizado {
@@ -289,6 +304,7 @@ strong {
 
 .carrossel h2 {
   height: 60px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -585,26 +601,10 @@ hr {
   padding: 20px;
 }
 
-@media (max-width: 1090px) {
-  .infos {
-    width: 100%;
-  }
-
+@media (max-width: 1280px) {
   .conteudo-ajuda {
     width: 60vw;
     justify-content: space-evenly;
-  }
-
-  .conteudo-ajuda h1 {
-    font-size: 1.3em;
-  }
-
-  .conteudo-ajuda h2 {
-    font-size: 0.9em;
-  }
-
-  .conteudo-ajuda p {
-    font-size: 0.9em;
   }
 
   .carrossel {
@@ -616,6 +616,12 @@ hr {
     width: 60vw;
     height: 180px;
     margin: 5px 0;
+  }
+}
+
+@media (max-width: 1090px) {
+  .infos {
+    width: 100%;
   }
 
   .conteudo-beneficios {
@@ -679,7 +685,6 @@ hr {
     width: 60vw;
   }
 }
-
 
 @media (max-width: 690px), (orientation: portrait) {
   html {
