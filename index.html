@@ -24,7 +24,7 @@
   <body>
     <header class="cabecalho">
       <nav id="nav">
-        <img class="logo" src="./src/assets/images/cabecalho/logo.png" />
+        <a href="#apresentacao"><img class="logo" src="./src/assets/images/cabecalho/logo.png" /></a>
         <button aria-label="Abrir Menu" id="menu-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" class="menu-mobile">
           <span class="hamburger"></span>
         </button>
@@ -41,7 +41,7 @@
     <a href="https://wa.me/5514981011070" target="_blank" class="fab-whats">
       <i class="bi bi-whatsapp float"></i>
     </a>
-    <section class="apresentacao">
+    <section id="apresentacao">
       <div class="infos">
         <h1 class="roboto-bold texto-centralizado">
           Descubra o caminho para uma vida mais leve e com propósito!
@@ -57,7 +57,7 @@
             target="_blank"
           >
             <i class="bi bi-whatsapp"></i>
-            <span>Entre em contato</span>
+            <span class="texto-centralizado">Entre em contato</span>
           </a>
         </div>
       </div>
@@ -68,19 +68,19 @@
           Transforme sua angústia em leveza por meio da psicoterapia!
         </h1>
         <article class="roboto-medium">
-          <p>
+          <p class="texto-justificado">
             Provavelmente você já se viu diante de
             <strong>momentos desafiadores</strong>, sem saber como agir ou lidar
             com eles. Nessas horas, é comum se ver tomado(a) por uma
             <strong>angústia</strong> e confuso com seus próprios sentimentos.
           </p>
-          <p>
+          <p class="texto-justificado">
             Diante dessas circunstâncias, é importante olhar para si mesmo(a),
             compreender o que e como isso está lhe afetando. Se
             <strong>organizando</strong> internamente, você pode compreender o
             que está gerando essa angústia e, assim, se ver livre dela.
           </p>
-          <p>
+          <p class="texto-justificado">
             Estou aqui para caminhar ao seu lado, dê o primeiro passo para
             encontrar uma <strong>vida mais leve!</strong>
           </p>
@@ -91,7 +91,7 @@
           target="_blank"
         >
           <i class="bi bi-whatsapp"></i>
-          <span>Quero uma vida mais leve!</span>
+          <span class="texto-centralizado">Quero uma vida mais leve!</span>
         </a>
       </div>
     </section>
@@ -101,7 +101,7 @@
           <h1 class="roboto-bold texto-centralizado">
             Como a Psicoterapia Pode Ajudar?
           </h1>
-          <p class="roboto-medium">
+          <p class="roboto-medium texto-justificado">
             A psicoterapia oferece suporte em diversos momentos e questões da
             vida. Alguns exemplos incluem:
           </p>
@@ -109,10 +109,10 @@
         <div class="carrossel">
           <article>
             <div class="icone-espaco">
-              <i class="bi bi-heart-fill icone-carrossel"></i>
+              <img src="/src/assets/images/ajuda/heart-fill.svg">
             </div>
             <h2 class="roboto-bold">Relacionamentos</h2>
-            <p class="roboto-medium texto-centralizado">
+            <p class="roboto-medium texto-justificado">
               Auxilia na compreensão da dinâmica da relação, amorosa ou
               familiar, por exemplo, identificando seus desejos e incômodos,
               promovendo uma comunicação mais eficaz e relações mais saudáveis.
@@ -120,10 +120,10 @@
           </article>
           <article>
             <div class="icone-espaco">
-              <i class="bi bi-person-fill"></i>
+              <img class="icone-p" src="/src/assets/images/ajuda/person-fill.svg">
             </div>
             <h2 class="roboto-bold">Autoestima</h2>
-            <p class="roboto-medium texto-centralizado">
+            <p class="roboto-medium texto-justificado">
               Busca compreender como você se vê e como esse olhar foi
               construído, a fim de fortalecer e permitir que você se valorize e
               se aceite como é.
@@ -131,10 +131,10 @@
           </article>
           <article>
             <div class="icone-espaco">
-              <i class="bi bi-emoji-frown-fill"></i>
+              <img src="/src/assets/images/ajuda/sad-fill.svg">
             </div>
             <h2 class="roboto-bold">Ansiedade</h2>
-            <p class="roboto-medium texto-centralizado">
+            <p class="roboto-medium texto-justificado">
               Auxilia na percepção dos fatores que têm lhe gerado ansiedade e
               construindo ferramentas para lidar com ela, promovendo uma vida
               mais tranquila e controlada.
@@ -142,10 +142,10 @@
           </article>
           <article>
             <div class="icone-espaco">
-              <i class="bi bi-battery icone-carrossel"></i>
+              <img class="icone-mp" src="/src/assets/images/ajuda/battery.svg">
             </div>
             <h2 class="roboto-bold">Estresse e sobrecarga</h2>
-            <p class="roboto-medium texto-centralizado">
+            <p class="roboto-medium texto-justificado">
               Constrói, junto a você, estratégias para gerenciar a sobrecarga e
               o estresse, ajudando a equilibrar as demandas do dia a dia.
             </p>
@@ -157,7 +157,7 @@
           target="_blank"
         >
           <i class="bi bi-whatsapp"></i>
-          <span>Eu quero ajuda profissional!</span>
+          <span class="texto-centralizado">Eu quero ajuda profissional!</span>
         </a>
       </div>
     </section>
@@ -168,8 +168,8 @@
         </div>
         <div class="descricao-beneficios">
           <div class="beneficios-cab">
-            <h1 class="roboto-bold">Benefícios da Psicoterapia</h1>
-            <p class="roboto-medium">
+            <h1 class="roboto-bold texto-centralizado">Benefícios da Psicoterapia</h1>
+            <p class="roboto-medium texto-justificado">
               Na psicoterapia, você tem a oportunidade de parar e
               <strong>olhar para si, se ouvir e ser ouvido(a)</strong> dentro de
               um <strong>espaço acolhedor e reflexivo</strong>. Desatando os nós
@@ -194,7 +194,7 @@
               target="_blank"
             >
               <i class="bi bi-whatsapp"></i>
-              <span>Quero iniciar!</span>
+              <span class="texto-centralizado">Quero iniciar!</span>
             </a>
           </div>
         </div>
@@ -203,14 +203,14 @@
     <section id="depoimentos">
       <div class="conteudo-depoimentos">
         <div class="depoimentos-cab">
-          <h1 class="roboto-bold">Depoimentos</h1>
-          <p class="roboto-medium">Veja o que dizem sobre o meu trabalho</p>
+          <h1 class="roboto-bold texto-centralizado">Depoimentos</h1>
+          <p class="roboto-medium texto-justificado">Veja o que dizem sobre o meu trabalho</p>
         </div>
         <div class="depoimentos-slide mySwiper">
           <div class="swiper-wrapper">
             <div class="slide swiper-slide">
             <i class="bi bi-quote citacao"></i>
-            <p class="depoimentos-txt">
+            <p class="depoimentos-txt texto-justificado">
               A doutrina de Lacan sobre o RSI diz que o nó borromeano que amarra
               a tripartição estrutural dos registros real, simbólico e
               imaginário opera não per via di porre, e sim per via di levare que
@@ -226,7 +226,7 @@
             </div>
             <div class="slide swiper-slide">
             <i class="bi bi-quote citacao"></i>
-            <p class="depoimentos-txt">
+            <p class="depoimentos-txt texto-justificado">
               Lacan dirá que o polo hostil da ambivalência afetiva do complexo
               paterno é o ponto de fundação de nosso próprio desejo que a Mulher
               não existe.
@@ -241,7 +241,7 @@
             </div>
             <div class="slide swiper-slide">
             <i class="bi bi-quote citacao"></i>
-            <p class="depoimentos-txt">
+            <p class="depoimentos-txt texto-justificado">
               A clínica mostra que o início do tratamento os processos oníricos
               — e, por extensão, todo o inconsciente — fornece a dimensão
               teórica cujos efeitos produzem o recalque desta mesma etilogia
@@ -266,20 +266,20 @@
       <div class="conteudo-sobre">
         <div class="descricao-sobre roboto-medium">
           <div class="descricao-sobre-cab">
-            <h1 class="roboto-bold">Sobre Mim</h1>
+            <h1 class="roboto-bold texto-centralizado">Sobre Mim</h1>
           </div>
           <article class="descricao-sobre-corpo">
-            <p>
+            <p class="texto-justificado">
               <span>Olá,</span>
             </p>
-            <p>
-              <span>sou psicóloga clínica (CRP 06/138045), formada pela Universidade de Marília (UNIMAR). Me oriento pela </span> <strong>Psicanálise</strong> <span> para atender </span> <strong>adultos</strong> <span> de todo o Brasil e exterior, na modalidade </span> <strong>online</strong> <span>, além de atendimentos </span> <strong> presenciais em Marília.</strong>
+            <p class="texto-justificado">
+              <span>Sou psicóloga clínica (CRP 06/138045), formada pela Universidade de Marília (UNIMAR). Me oriento pela </span> <strong>Psicanálise</strong> <span> para atender </span> <strong>adultos</strong> <span> de todo o Brasil e exterior, na modalidade </span> <strong>online</strong> <span>, além de atendimentos </span> <strong> presenciais em Marília.</strong>
             </p>
-            <p>
+            <p class="texto-justificado">
               <span>Valorizo e prezo por um ambiente </span> <strong>acolhedor</strong> <span>, afetivo, com comprometimento e ética. Meu compromisso é te auxiliar a encontrar mais </span> <strong>leveza</strong> <span> e uma vida com mais sentido, sempre respeitando e honrando a sua história!
               </span>
             </p>
-            <p>
+            <p class="texto-justificado">
               <span>Estou pronta para caminhar junto a você nessa jornada <strong>transformadora!</strong></span>
             </p>
           </article>
@@ -301,7 +301,7 @@
     </section>
     <section id="duvidas">
       <div class="duvidas-cab">
-        <h1 class="roboto-bold">Duvidas</h1>
+        <h1 class="roboto-bold texto-centralizado">Duvidas</h1>
       </div>
       <div class="conteudo-duvidas roboto-medium">
         <div class="duvidas-quest">
@@ -316,14 +316,14 @@
           </div>
           <hr>
           <div class="questionario">
-            <div class="pergunta">
+            <div class="pergunta texto-justificado">
               <i class="bi bi-caret-right-fill"></i><a>Qual a duração e frequência das sessões?</a>
             </div>
             <div class="duvidas-r"><p>As sessões têm duração de 50 minutos e ocorrem 1 vez por semana.</p>
             </div>
           </div>
           <hr>
-          <div class="questionario">
+          <div class="questionario texto-justificado">
             <div class="pergunta">
               <i class="bi bi-caret-right-fill"></i><a>Qual o valor da sessão?</a>
             </div>
@@ -332,7 +332,7 @@
             </div>
           </div>
           <hr>
-          <div class="questionario">
+          <div class="questionario texto-justificado">
             <div class="pergunta">
               <i class="bi bi-caret-right-fill"></i><a>Quais as formas de pagamento?</a>
             </div>
@@ -341,7 +341,7 @@
             </div>
           </div>
           <hr>
-          <div class="questionario">
+          <div class="questionario texto-justificado">
             <div class="pergunta">
               <i class="bi bi-caret-right-fill"></i><a>Como agendar uma consulta?</a>
             </div>
@@ -359,7 +359,7 @@
           target="_blank"
         >
           <i class="bi bi-whatsapp"></i>
-          <span>Duvidas? Fale comigo!</span>
+          <span class="texto-centralizado">Duvidas? Fale comigo!</span>
         </a>
       </div>
     </section>

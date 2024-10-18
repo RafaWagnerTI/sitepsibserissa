@@ -76,10 +76,10 @@ html {
   font-style: normal;
 }
 
-.apresentacao {
+#apresentacao {
   width: 100%;
   height: 75vh;
-  background: url("../images/apresentacao/sala-terapia.png");
+  background: url("../images/apresentacao/sala-terapia-alt.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -122,7 +122,7 @@ html {
   width: fit-content;
   padding: 10px 20px;
   border-radius: 15px;
-  align-items: flex-end;
+  align-items: center;
   box-shadow: 2px 3px 10px 0px rgba(0,0,0,0.5);
 }
 
@@ -168,7 +168,7 @@ html {
   }
   70% {
     transform: scale(1);
-    box-shadow: rgba(97, 206, 112, 0) 0 0 0 50px;
+    box-shadow: rgba(97, 206, 112, 0) 0 0 0 25px;
   }
   100% {
     transform: scale(.9);
@@ -263,13 +263,24 @@ strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  height: 30px;
+  height: auto;
   width: 100%;
 }
 
-.bi-heart-fill {
-  position: relative;
+.icone-espaco img {
+  height: 30px;
+  width: 30px;
+}
+
+.icone-p {
+  scale: 1.2;
+}
+
+.icone-mp {
+  scale: 1.3;
+}
+
+/* .bi-heart-fill {
   font-size: 28px;
 }
 
@@ -283,7 +294,7 @@ strong {
 
 .bi-battery {
   font-size: 55px;
-}
+} */
 
 .carrossel p {
   display: flex;
@@ -294,6 +305,11 @@ strong {
 
 .texto-centralizado {
   text-align: center;
+}
+
+.texto-justificado {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .carrossel svg {
@@ -526,7 +542,6 @@ strong {
   cursor: pointer;
   font-size: 1.3em;
   color: #000;
-  text-decoration: underline;
   margin: 10px 0;
 }
 
@@ -641,6 +656,16 @@ hr {
 
   .descricao-beneficios {
     width: 60vw;
+    padding: 10px 0;
+  }
+
+  .beneficios-cab p {
+    padding: 20px 0 0 0;
+  }
+
+  .beneficios-lista ul {
+    padding: 30px 0;
+    padding-left: 30px;
   }
 
   .conteudo-sobre {
@@ -650,6 +675,7 @@ hr {
   }
 
   .descricao-sobre {
+    padding: 10px 0;
     width: 60vw;
     order: 1;
   }
@@ -776,8 +802,13 @@ hr {
     display: none;
   }
 
-  .beneficios-lista ul {
-    padding: 30px 10px ;
+  .botao span {
+    font-size: 0.9em;
+  }
+
+  .slide {
+    cursor: grab;
+    padding: 0 0 30px 0;
   }
 
   .swiper-button-next::after {

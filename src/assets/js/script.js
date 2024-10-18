@@ -74,5 +74,15 @@ function toggleMenu(e) {
   e.currentTarget.setAttribute('aria-label', `${aberto ? "Fechar" : "Abrir"} Menu`);
 }
 
+const mnuNavegacao = document.getElementById('menu');
+
+const itensMenu = mnuNavegacao.childNodes;
+
+itensMenu.forEach(i => { 
+  if(i.nodeName == "LI") {
+    i.addEventListener('click', toggleMenu);
+  }
+} );
+
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
