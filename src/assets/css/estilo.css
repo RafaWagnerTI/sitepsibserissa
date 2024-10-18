@@ -137,10 +137,6 @@ html {
   transition: transform 0.8s, text-decoration-thickness 0.8s;
 }
 
-.botao svg {
-  margin-right: 10px;
-}
-
 .fab-whats {
   position: fixed;
   right: 30px;
@@ -781,8 +777,17 @@ hr {
     display: none;
   }
 
+  .botao {
+    gap:5px;
+    padding: 10px 5px;
+  }
+
+  .botao i {
+    font-size: 10px;
+  }
+
   .botao span {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
   .slide {
