@@ -398,9 +398,10 @@ strong {
   padding: 0px 60px 30px 60px;
 }
 
-.citacao {
-  color:#eee;
-  font-size: 5em;
+.google {
+  max-width: 40px;
+  max-height: 40px;
+  margin-bottom: 20px;
 }
 
 .slide p.depoimentos-txt {
